@@ -1,0 +1,14 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+
+<div class="template">
+    <h1>CREATE</h1>
+
+    <form class="form" action="<?= $block->getBaseUrl() ?>hihi/index/save" method="post">
+        <input name="name" placeholder="Please enter a name">
+        <input name="age" placeholder="Please enter an age">
+
+        <button type="submit">Submit</button>
+    </form>
+</div>

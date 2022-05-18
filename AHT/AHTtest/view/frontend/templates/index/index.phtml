@@ -1,0 +1,32 @@
+<?php
+/** @var \AHT\AHTtest\Block\Index\Index $block */
+$data = $block->test();
+?>
+<a href="<?= $block->getBaseUrl() ?>hihi/index/create">Add New</a>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+
+    <tbody>
+        <?php foreach($data as $value):?>
+            <tr>
+                <td><?=$value->getTableId()?></td>
+                <td><?=$value->getName()?></td>
+                <td><?=$value->getAge()?></td>
+                <td>
+                    <a href="<?= $block->getBaseUrl() ?>hihi/index/edit/id/<?= $value->getTableId() ?>" >Edit</a>
+                    <a href="<?= $block->getBaseUrl() ?>hihi/index/delete/id/<?= $value->getTableId() ?>">Delete</a>
+                </td>
+            </tr>
+        <?php endforeach?>
+    </tbody>
+   
+    
+    
+</table>

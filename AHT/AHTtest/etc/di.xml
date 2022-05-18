@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="AHT\AHTtest\Api\TableRepositoryInterface" type="AHT\AHTtest\Model\TableRepository"/>
+	<preference for="AHT\AHTtest\Api\Data\TableInterface" type="AHT\AHTtest\Model\Data\Table"/>
+	<preference for="AHT\AHTtest\Api\Data\TableSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+</config>
